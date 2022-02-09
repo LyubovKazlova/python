@@ -53,7 +53,6 @@ print(my_func(x, y))
 b = 0
 def slogenie(b):
     a = input('Введите числа через пробел. Для остановки ввода нажмите n: ').split()
-    #b = slogenie(b)
     for el in a:
         if el == 'n':
             print('Задача окончена. Сумма чисел:')
@@ -62,18 +61,14 @@ def slogenie(b):
             el = int(el)
             b = b + el
     return b
-    print(b)
 i = 0
 while i != 'n':
     i = input('Продолжаем вводить числа? y - да, n - нет: ')
     if i != 'n':
-        print(slogenie(b))
+        b = slogenie(b)
+        print(b)
     else:
-  #  print(b)
-    #i = input('Для выхода из задачи нажмите "n", для продолжения - любую клавишу:')
         print('Алексей, осталось проверить 2 задания.') #здесь могло быть любое прощание
-
-
 # задание 6.
 word = input('Введите слово на латинице маленькими буквами: ')
 def int_func(word):
